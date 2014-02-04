@@ -1,6 +1,6 @@
 /*
-     Name:
-     Date:
+     Name: Samantha Miller
+     Date: February 4, 2014
      Class & Section:  WIA-####
      Comments: "HTML5 Canvas Drawing"
  */
@@ -12,6 +12,7 @@ HTML5 Shape Drawing Activity
     2.  Draw out each shape in the sections below
      
 ********************************************/
+window.onload = function(){
 
 /*******************************************
 FILE SETUP
@@ -33,7 +34,13 @@ Reminder - set the style first then draw.
 ********************************************/
 
 //Draw Rectangle here
-
+	var theCanvas = document.getElementById('Canvas1');
+		if(theCanvas && theCanvas.getContext) {
+			var ctx = theCanvas.getContext("2d");
+			if(ctx) {
+				// Draw here
+			}
+		} // End of Canvas1
 
 /*******************************************
 PART 2
@@ -50,7 +57,13 @@ Use the arc method
 
 //Draw Circle here
 
-
+	var theCanvas = document.getElementById('Canvas2');
+		if(theCanvas && theCanvas.getContext) {
+			var ctx = theCanvas.getContext("2d");
+			if(ctx) {
+				// Draw here
+			}
+		} // End of Canvas1
 
 
 /*******************************************
@@ -67,7 +80,13 @@ Height and width and color are up to you.
 
 //Draw Star here
 
-
+	var theCanvas = document.getElementById('Canvas3');
+		if(theCanvas && theCanvas.getContext) {
+			var ctx = theCanvas.getContext("2d");
+			if(ctx) {
+				// Draw here
+			}
+		} // End of Canvas1
 /*******************************************
 PART 4
 
@@ -82,6 +101,13 @@ Do not overlap any other object.
 
 //Draw Umbrella top here
 
+	var theCanvas = document.getElementById('Canvas4');
+		if(theCanvas && theCanvas.getContext) {
+			var ctx = theCanvas.getContext("2d");
+			if(ctx) {
+				// Draw here
+			}
+		} // End of Canvas1
 /*******************************************
 PART 5
 
@@ -92,7 +118,13 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 
 //Draw text here
 
-
+	var theCanvas = document.getElementById('Canvas5');
+		if(theCanvas && theCanvas.getContext) {
+			var ctx = theCanvas.getContext("2d");
+			if(ctx) {
+				// Draw here
+			}
+		} // End of Canvas1
 /*******************************************
 PART 6
 
@@ -106,4 +138,11 @@ You must use at least 3 different methods.
 
 // Draw scene here
 
-
+	var theCanvas = document.getElementById('Canvas6');
+		if(theCanvas && theCanvas.getContext) {
+			var ctx = theCanvas.getContext("2d");
+			if(ctx) {
+				// Draw here
+			}
+		} // End of Canvas1
+} // End onload function
