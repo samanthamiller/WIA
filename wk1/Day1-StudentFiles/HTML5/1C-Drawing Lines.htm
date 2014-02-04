@@ -9,11 +9,22 @@
 		</style>
 		<script>
 			window.onload = function() {
-				// draw lines of varying widths
+				// Draw lines of varying widths
 				var theCanvas = document.getElementById('Canvas1');
 				if (theCanvas && theCanvas.getContext) {
 					var ctx = theCanvas.getContext("2d");
 					if (ctx) {
+						// Draw here
+						for(var i=0; i<10; i++){
+							ctx.lineWidth = 1 + i; // Increase line width
+							ctx.strokeStyle = "blue";
+
+							ctx.beginPath();
+							ctx.moveTo(25,25 + i*15); // Moves 15 pixels
+							ctx.lineTo(475, 25 + i*15); // Moves 15 pixels
+							ctx.stroke();
+						}
+
 					}
 				}
 			}
@@ -22,7 +33,10 @@
 	<body>
 		<h1>Drawing Lines In Canvas</h1>
 		<p>This example will draw several styles of lines. First: basic line width</p>
-		<canvas id="Canvas1" width="500" height="200">Your browser does not support canvas.</canvas>
+		<canvas id="Canvas1" width="500" height="200">
+			<!-- Fallback Content -->
+			Your browser does not support canvas.
+		</canvas>
 
 
 	</body>
