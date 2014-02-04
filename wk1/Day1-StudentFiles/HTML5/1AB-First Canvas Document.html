@@ -2,9 +2,57 @@
 <html>
 	<head>
 		<title>Our First Canvas</title>
+		<style type="text/css">
+			#Canvas1{
+				border:dotted 3px black;
+				background-color:lightGray;
+			}
+		</style>
+		
+		<script>
+			window.onload = function(){
+				var theCanvas = document.getElementById("Canvas1");
+
+				// Set height in width in HTML
+				// theCanvas.width = 150;
+				// theCanvas.height = 150;
+
+				// Test to make sure the canvas does exist
+				if(theCanvas){
+					// Get our 2d context
+					var ctx = theCanvas.getContext("2d");
+					if(ctx){
+						// Draw here
+						// 1. Draw a stroked rectangle
+						ctx.strokeStyle = "blue";
+						ctx.lineWidth = 5;
+						ctx.strokeRect(25,25,100,125);
+
+						// 2. Draw a filled rectangle
+						ctx.fillStyle = "green";
+						ctx.fillRect(150,25,100,125);
+
+						// 3. Draw a filled and stroked rectangle
+						ctx.strokeStyle = "red";
+						ctx.fillStyle = "yellow";
+						ctx.lineWidth = 10;
+						ctx.fillRect(275,25,100,125);
+						ctx.strokeRect(275,25,100,125);
+
+						// 4. Clear a rectangle
+						ctx.clearRect(15,75,450,50);
+
+					}
+				}
+			}
+		</script>	
 	</head>
 	<body>
 		<h1>First Canvas Example</h1>
 		<p>This document contains our first canvas example</p>
+		<canvas id="Canvas1" width="400" height="300">
+			<!-- Fallback Content -->
+			Your browser does not support canvas!
+		</canvas>	
 	</body>
 </html>
