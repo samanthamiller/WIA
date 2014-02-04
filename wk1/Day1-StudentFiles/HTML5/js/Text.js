@@ -4,7 +4,7 @@ window.onload = function() {
 	var ctx = theCanvas.getContext("2d");
 	if (ctx) {
 						
-						
+					console.log('it works');	
 						
 						
 						
