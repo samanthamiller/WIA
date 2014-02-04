@@ -12,7 +12,7 @@ HTML5 Shape Drawing Activity
     2.  Draw out each shape in the sections below
      
 ********************************************/
-window.onload = function(){
+
 
 /*******************************************
 FILE SETUP
@@ -27,20 +27,37 @@ PART 1
 
 Draw a rectangle starting at point (0 ,0)
 That has a width of 50 px and a heigh of 100px
-Set the color of the rectangle to a shade of blue.
+Set the color of the rectangle to a shade of blue. -
 Set the stroke color to black and the dimension of the stroke are the same as the rectangle.
 
 Reminder - set the style first then draw.
 ********************************************/
 
 //Draw Rectangle here
+window.onload = function(){
 	var theCanvas = document.getElementById('Canvas1');
 		if(theCanvas && theCanvas.getContext) {
 			var ctx = theCanvas.getContext("2d");
 			if(ctx) {
 				// Draw here
-			}
-		} // End of Canvas1
+				ctx.fillStyle = 'rgb(70,130,180)';
+				ctx.strokeStyle = 'black';
+				ctx.lineWidth = 5;
+
+				// ctx.beginPath();
+				// ctx.moveTo(0,0);
+				// ctx.lineTo(50,0);
+				// ctx.stroke();
+
+						ctx.beginPath();
+						ctx.moveTo(25,175);
+						ctx.lineTo(50,25);
+						ctx.lineTo(125,50);
+						ctx.lineTo(175,175);
+						ctx.stroke();
+		}
+	} // End of Canvas1
+}	// End of onload function
 
 /*******************************************
 PART 2
@@ -57,13 +74,15 @@ Use the arc method
 
 //Draw Circle here
 
+window.onload = function(){
 	var theCanvas = document.getElementById('Canvas2');
 		if(theCanvas && theCanvas.getContext) {
 			var ctx = theCanvas.getContext("2d");
 			if(ctx) {
 				// Draw here
 			}
-		} // End of Canvas1
+		} // End of Canvas2
+	} // End of onlod function
 
 
 /*******************************************
@@ -80,13 +99,15 @@ Height and width and color are up to you.
 
 //Draw Star here
 
+window.onload = function(){
 	var theCanvas = document.getElementById('Canvas3');
 		if(theCanvas && theCanvas.getContext) {
 			var ctx = theCanvas.getContext("2d");
 			if(ctx) {
 				// Draw here
 			}
-		} // End of Canvas1
+		} // End of Canvas3
+	} // End of onlod function
 /*******************************************
 PART 4
 
@@ -101,13 +122,15 @@ Do not overlap any other object.
 
 //Draw Umbrella top here
 
+window.onload = function(){
 	var theCanvas = document.getElementById('Canvas4');
 		if(theCanvas && theCanvas.getContext) {
 			var ctx = theCanvas.getContext("2d");
 			if(ctx) {
 				// Draw here
 			}
-		} // End of Canvas1
+		} // End of Canvas4
+	} // End of onlod function
 /*******************************************
 PART 5
 
@@ -118,13 +141,15 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 
 //Draw text here
 
+window.onload = function(){
 	var theCanvas = document.getElementById('Canvas5');
 		if(theCanvas && theCanvas.getContext) {
 			var ctx = theCanvas.getContext("2d");
 			if(ctx) {
 				// Draw here
 			}
-		} // End of Canvas1
+		} // End of Canvas5
+	} // End of onlod function
 /*******************************************
 PART 6
 
@@ -138,11 +163,12 @@ You must use at least 3 different methods.
 
 // Draw scene here
 
+window.onload = function(){
 	var theCanvas = document.getElementById('Canvas6');
 		if(theCanvas && theCanvas.getContext) {
 			var ctx = theCanvas.getContext("2d");
 			if(ctx) {
 				// Draw here
 			}
-		} // End of Canvas1
-} // End onload function
+		} // End of Canvas6
+	} // End of onlod function
