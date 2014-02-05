@@ -12,7 +12,7 @@ HTML5 Shape Drawing Activity
     2.  Draw out each shape in the sections below
      
 ********************************************/
-
+window.onload = function(){
 
 /*******************************************
 FILE SETUP
@@ -34,7 +34,7 @@ Reminder - set the style first then draw.
 ********************************************/
 
 //Draw Rectangle here
-window.onload = function(){
+
 	var theCanvas = document.getElementById('Canvas1');
 		if(theCanvas && theCanvas.getContext) {
 			var ctx = theCanvas.getContext("2d");
@@ -43,22 +43,11 @@ window.onload = function(){
 				ctx.fillStyle = 'rgb(70,130,180)';
 				ctx.strokeStyle = 'black';
 				ctx.lineWidth = 5;
-
-				// ctx.beginPath();
-				// ctx.moveTo(0,0);
-				// ctx.lineTo(50,0);
-				// ctx.stroke();
-
-						ctx.beginPath();
-						ctx.moveTo(25,175);
-						ctx.lineTo(50,25);
-						ctx.lineTo(125,50);
-						ctx.lineTo(175,175);
-						ctx.stroke();
+			
+				ctx.strokeRect(0,0,50,100);
+				ctx.fillRect(0,0,50,100);
 		}
 	} // End of Canvas1
-}	// End of onload function
-
 /*******************************************
 PART 2
 
@@ -71,20 +60,25 @@ Reminder - set the style first then draw.
 Use the arc method
 ********************************************/
 
-
 //Draw Circle here
 
-window.onload = function(){
 	var theCanvas = document.getElementById('Canvas2');
 		if(theCanvas && theCanvas.getContext) {
 			var ctx = theCanvas.getContext("2d");
 			if(ctx) {
 				// Draw here
+				ctx.fillStyle = 'rgba(181,75,75,.5)';
+				ctx.strokeStyle = 'black';
+				ctx.lineWidth = '30';
+
+				var degrees = 360;
+				var radians = (Math.PI/180)*degrees;
+				ctx.beginPath();
+				ctx.arc(50, 50, 20, 0, radians);
+				ctx.fill();
+				ctx.stroke();
 			}
 		} // End of Canvas2
-	} // End of onlod function
-
-
 /*******************************************
 PART 3
 
@@ -96,18 +90,35 @@ Height and width and color are up to you.
 
 ********************************************/
 
-
 //Draw Star here
 
-window.onload = function(){
 	var theCanvas = document.getElementById('Canvas3');
 		if(theCanvas && theCanvas.getContext) {
 			var ctx = theCanvas.getContext("2d");
 			if(ctx) {
 				// Draw here
+
+				ctx.fillStyle = 'rgb(230,13,180)';
+				ctx.strokeStyle= 'rgb(230,230,13)';
+				ctx.lineWidth= 5;
+				
+				ctx.beginPath();
+				ctx.moveTo(100, 100);
+				ctx.lineTo(139,96);
+	            ctx.lineTo(157,60);
+	            ctx.lineTo(174,96);
+	            ctx.lineTo(213,101);
+	            ctx.lineTo(185,129);
+	            ctx.lineTo(192,168);
+	            ctx.lineTo(157,150);
+	            ctx.lineTo(122,168);
+	            ctx.lineTo(128,129);
+	            ctx.closePath();
+				ctx.stroke();
+				ctx.fill();
 			}
 		} // End of Canvas3
-	} // End of onlod function
+
 /*******************************************
 PART 4
 
@@ -122,15 +133,28 @@ Do not overlap any other object.
 
 //Draw Umbrella top here
 
-window.onload = function(){
 	var theCanvas = document.getElementById('Canvas4');
 		if(theCanvas && theCanvas.getContext) {
 			var ctx = theCanvas.getContext("2d");
 			if(ctx) {
 				// Draw here
+				ctx.fillStyle = 'rgb(76, 0, 153)';
+				ctx.strokeStyle= 'rgb(32,32,32)';
+				ctx.lineWidth= 5;
+
+				
+				ctx.beginPath();
+				ctx.arc(350,150,100,0, 1*Math.PI, true);
+				ctx.bezierCurveTo(250,150,275,100,300,150);
+				ctx.bezierCurveTo(300,150,325,100,350,150);
+				ctx.bezierCurveTo(350,150,375,100,400,150);
+				ctx.bezierCurveTo(400,150,425,100,450,150);
+				ctx.stroke();
+				ctx.fill();
+				
 			}
 		} // End of Canvas4
-	} // End of onlod function
+
 /*******************************************
 PART 5
 
@@ -141,15 +165,18 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 
 //Draw text here
 
-window.onload = function(){
 	var theCanvas = document.getElementById('Canvas5');
 		if(theCanvas && theCanvas.getContext) {
 			var ctx = theCanvas.getContext("2d");
 			if(ctx) {
-				// Draw here
+				var textString = "Fish Lips";
+				ctx.font = "32pt corbel";
+				ctx.fillStyle = 'rgb(230,42,13)';
+				ctx.fillText(textString, 275, 150);
+
 			}
 		} // End of Canvas5
-	} // End of onlod function
+
 /*******************************************
 PART 6
 
@@ -163,12 +190,47 @@ You must use at least 3 different methods.
 
 // Draw scene here
 
-window.onload = function(){
 	var theCanvas = document.getElementById('Canvas6');
 		if(theCanvas && theCanvas.getContext) {
 			var ctx = theCanvas.getContext("2d");
 			if(ctx) {
-				// Draw here
+
+				// Circle Style
+				ctx.fillStyle = 'rgb(204,204,0)';
+				ctx.strokeStyle = 'black';
+				ctx.lineWidth = '5';
+				// Draw Circle 
+				var degrees = 360;
+				var radians = (Math.PI/180)*degrees;
+				ctx.beginPath();
+				ctx.arc(350, 150, 60, 0, radians);
+				ctx.fill();
+				ctx.stroke();
+
+				// Small Circle Style
+				ctx.fillStyle = 'black';
+				// Draw Small Circle
+				var degrees = 360;
+				var radians = (Math.PI/180)*degrees;
+				ctx.beginPath();
+				ctx.arc(327, 145, 5, 0, radians);
+				ctx.arc(367, 145, 5, 0, radians);
+				ctx.fill();
+
+				// Rectangle style
+				ctx.fillStyle = 'black';
+				ctx.lineWidth = 5;
+				// Draw Rectangle 
+				ctx.fillRect(320,130,15,5);
+				ctx.fillRect(360,130,15,5);
+
+				// Bezier style
+				ctx.strokeStyle= 'rgb(32,32,32)';
+				ctx.lineWidth= 5;
+				// Draw Bezier
+				ctx.beginPath();
+				ctx.bezierCurveTo(400,150,350,250,300,150);
+				ctx.stroke();
 			}
 		} // End of Canvas6
-	} // End of onlod function
+}	// End of onload function
