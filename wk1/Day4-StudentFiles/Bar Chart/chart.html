@@ -5,6 +5,11 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>HTML</title>
+        <link rel='stylesheet' type="text/css" href="css/chart.css" />
+        <!-- [if lt IE9] >
+            <link rel="stylesheet" type="text/css" href="css/chart_ie.css"/>
+        <[endif] -->
+        <script type="text/javascript" src="includes/jquery-1.6.1.min.js"></script>
 	</head>
 
 	<body>
@@ -23,15 +28,28 @@
 			<div class="chart-area" bar-spacing="30">	
 				<div bar-value='376' label='Turkey' class='chart-bar turkey'></div>
 				<div bar-value='621' label='Pizza' class='chart-bar pizza'></div>
-				<div bar-value='521' label='Fish' class='chart-bar turkey'></div>
-				<div bar-value='376' label='Turkey' class='chart-bar turkey'></div>
-				<div bar-value='376' label='Turkey' class='chart-bar turkey'></div>				
-
+				<div bar-value='521' label='Fish' class='chart-bar fish'></div>
+				<div bar-value='832' label='Cheese' class='chart-bar cheese'></div>
+				<div bar-value='418' label='Hotdog' class='chart-bar hotdog'></div>	
 			</div> <!-- End chart-area div -->
 			<div class="chart-x-axis">
 			</div> <!-- End chart-x-axis div -->
 		</div> <!-- End chart-content div -->
 	</div> <!-- End chart-container div -->
- 
+        
+        <form id="turkeyForm" name="turkeyForm" method="post" action="">
+            <select name="continent" id="continent">
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+                <option value="500">500</option>
+                <option value="600" selected="selected">600</option>
+            </select>
+        </form>
+        <br/>
+        <button onclick="turkeyUpdate()">Click to update Turkey Value</button>
+        
+        
+    <script type="text/javascript" src="js/chart.js"></script>
 	</body>
 </html>
