@@ -141,7 +141,6 @@ Do not overlap any other object.
 				ctx.fillStyle = 'rgb(76, 0, 153)';
 				ctx.strokeStyle= 'rgb(32,32,32)';
 				ctx.lineWidth= 5;
-
 				
 				ctx.beginPath();
 				ctx.arc(350,150,100,0, 1*Math.PI, true);
