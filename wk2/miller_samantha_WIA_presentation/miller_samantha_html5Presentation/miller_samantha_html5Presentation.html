@@ -42,10 +42,10 @@
 
 				<section>
 					<section>
-					<h2>What is EasyTabs.js?</h2>
+					<font size='6'><h2>What is EasyTabs.js?</h2></font>
 				</section>
 					<section>
-						<p>EasyTabs.js is a jQuery plugin that provides tab functionality, while leaving the styling up to the designer.</p>
+						<p>EasyTabs.js is an easy to use jQuery plugin that provides tab functionality, while leaving the styling up to the designer.</p>
 					</section>
 				</section>
 
@@ -53,7 +53,176 @@
 					<section>
 						<h2>How to use EasyTabs.js</h2>
 					</section>
+					<section>
+						<font size='6'><h2>EasyTabs.js HTML template</h2></font>
+						<pre>
+						<code data-trim contenteditable>
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;EasyTabs.js&lt;/title&gt;
+  &lt;script src=&quot;js/jquery-1.7.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/jquery.hashchange.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/jquery.easytabs.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    $(document).ready( function() {
+      $('#tab-container').easytabs();
+    });
+  &lt;/script&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/main.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div id=&quot;tab-container&quot; class=&quot;tab-container&quot;&gt;
+    &lt;ul class='etabs'&gt;
+      &lt;li class='tab'&gt;&lt;a href=&quot;#matchLinkHrefToDivId1&quot;&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li class='tab'&gt;&lt;a href=&quot;#matchLinkHrefToDivId2&quot;&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li class='tab'&gt;&lt;a href=&quot;#matchLinkHrefToDivId3&quot;&gt;Tab 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class='panel-container'&gt;
+    &lt;div id=&quot;matchLinkHrefToDivId1&quot;&gt;
+      &lt;h2&gt;Tab 1&lt;/h2&gt;
+      &lt;!-- content --&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;matchLinkHrefToDivId2&quot;&gt;
+      &lt;h2&gt;Tab 2&lt;/h2&gt;
+      &lt;!-- content --&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;matchLinkHrefToDivId3&quot;&gt;
+      &lt;h2&gt;Tab 3&lt;/h2&gt;
+      &lt;!-- content --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+						</code>
+						</pre>
+					</section>
+					<section>
+						<font size='5'><h2>How to implement EasyTabs.js</h2></font>
+						
+						<pre>
+						<code data-trim contenteditable>
+&lt;ul class='etabs'&gt;
+    &lt;li class='tab'&gt;&lt;a href=&quot;#matchLinkHrefToDivId1&quot;&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class='tab'&gt;&lt;a href=&quot;#matchLinkHrefToDivId2&quot;&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class='tab'&gt;&lt;a href=&quot;#matchLinkHrefToDivId3&quot;&gt;Tab 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+						</code>
+						</pre>
+						<ol>
+							<font size='5'><li>Create a unordered list with a class of 'etabs'.</li></font>
+							<font size='5'><li>Give a class of 'tab' to each list item added.</li></font>
+							<font size='5'><li>Give each list item an anchor tag and set the anchor tags href to whatever you like as long as there is a # infront of it.</li></font>
+						</ol>	
+						
+						<!-- <ol>
+	
+							<font size='5'><li>Create a div with a class name of 'panel-container'</li></font>
+							<font size='5'><li>Inside the 'panel-container' div add enough divs to match the number of list items/tabs created before</li></font>
+						</ol>	 -->
+					</section>
+					<section>
+						<font size='5'><h2>How to implement EasyTabs.js</h2></font>
+
+						<pre>
+						<code data-trim contenteditable>
+&lt;div class='panel-container'&gt;
+    &lt;div id=&quot;matchLinkHrefToDivId1&quot;&gt;
+      &lt;h2&gt;Tab 1&lt;/h2&gt;
+      &lt;!-- content --&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;matchLinkHrefToDivId2&quot;&gt;
+      &lt;h2&gt;Tab 2&lt;/h2&gt;
+      &lt;!-- content --&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;matchLinkHrefToDivId3&quot;&gt;
+      &lt;h2&gt;Tab 3&lt;/h2&gt;
+      &lt;!-- content --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+						</code>	
+						</pre>
+						<ol>
+							<font size='5'><li>Create a div with a class name of 'panel-container'.</li></font>
+							<font size='5'><li>Inside the 'panel-container' div add enough divs to match the number of list items/tabs created before.</li></font>
+							<font size='5'><li>Give each div an id that corresponds with the anchor tag href you wish to link with that tab.</li></font>
+							<font size='5'><li>Put the content you wish to appear for that tab in the div.</li></font>
+						</ol>	
+					</section>
 				</section>
+				<section>
+					<section>
+						<h2>How to style EasyTabs.js</h2>
+					</section>
+					<section>
+						<h2>Styling EasyTabs.js</h2>
+						<pre>
+						<code data-trim contenteditable>
+.etabs { 
+	margin: 0; 
+	padding: 0; 
+}
+
+.tab { 
+	display: inline-block; 
+	zoom:1; *display:inline; 
+	background: #935135; 
+	border: solid 1px #D4CDAF; 
+	border-bottom: none; 
+	-moz-border-radius: 4px 4px 0 0; 
+	-webkit-border-radius: 4px 4px 0 0; 
+}
+
+.tab a { 
+	font-size: 16px; 
+	line-height: 2em; 
+	display: block; 
+	padding: 0 20px; 
+	outline: none; 
+	text-decoration: none;
+	color:#D1D774;
+	font-family: 'Helvetica Neue';
+}
+
+
+.tab a:hover { 
+	text-decoration: underline;
+}
+
+.tab.active { 
+	background: #D4CDAF; 
+	padding-top: 6px; 
+	position: relative; 
+	top: 1px; 
+	border-color: #D4CDAF; 
+}
+
+.tab a.active { 
+	font-weight: bold; 
+	color: #935135;
+}
+.tab-container .panel-container { 
+	background: #D4CDAF; 
+	border: solid #D4CDAF 1px; 
+	padding: 20px; 
+	-moz-border-radius: 0 4px 4px 4px; 
+	-webkit-border-radius: 0 4px 4px 4px; 
+	font-family: 'Helvetica Neue';
+	color: #935135;
+
+}
+
+						</code>
+						</pre>
+					<p>Styling EasyTabs.js is the same as styling any other page. Using class names, id names, tag names etc.. the page can be styled to the designers desire.</p>	
+					</section>
+				</section>
+
+				<section>
+					<a href="EasyTabsExample.html">Example</a>
+				</section>
+
+
 
 
 			</div>
