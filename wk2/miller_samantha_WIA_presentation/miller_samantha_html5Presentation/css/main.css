@@ -24,11 +24,6 @@
 	font-family: 'Helvetica Neue';
 }
 
-
-.tab a:hover { 
-	/*text-decoration: underline; */
-}
-
 .tab.active { 
 	background: #D4CDAF; 
 	padding-top: 6px; 
@@ -41,9 +36,14 @@
 	font-weight: bold; 
 	color: #935135;
 }
+
+h1{
+	font-family: 'Helvetica Neue';
+	color: #935135;
+	font-size: 30px;
+}
+
 .tab-container .panel-container { 
-	/*width:700px;*/
-	/*height:200px;*/
 	background: #D4CDAF; 
 	border: solid #D4CDAF 1px; 
 	padding: 20px; 
@@ -51,7 +51,6 @@
 	-webkit-border-radius: 0 4px 4px 4px; 
 	font-family: 'Helvetica Neue';
 	color: #935135;
-
 }
 
     
