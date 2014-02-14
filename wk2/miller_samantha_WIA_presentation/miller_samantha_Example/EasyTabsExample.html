@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>EasyTabs.js Example</title>
+  <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+  <script src="js/jquery.hashchange.min.js" type="text/javascript"></script>
+  <script src="js/jquery.easytabs.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('#tab-container').easytabs();
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  <div id="tab-container" class="tab-container">
+    <ul class='etabs'>
+      <li class='tab'><a href="#tabs1-FirstPage">Tab 1</a></li>
+      <li class='tab'><a href="#tabs1-SecondPage">Tab 2</a></li>
+      <li class='tab'><a href="#tabs1-ThirdPage">Tab 3</a></li>
+    </ul>
+    <div class='panel-container'>
+    <div id="tabs1-FirstPage">
+      <h2>Tab 1</h2>
+      <!-- content -->
+    </div>
+    <div id="tabs1-SecondPage">
+      <h2>Tab 2</h2>
+      <!-- content -->
+    </div>
+    <div id="tabs1-ThirdPage">
+      <h2>Tab 3</h2>
+      <!-- content -->
+    </div>
+  </div>
+</body>
+</html>
