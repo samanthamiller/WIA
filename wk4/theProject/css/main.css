@@ -1,0 +1,43 @@
+body{
+	/*background-color: #f4e8c0;*/
+}
+
+.container{
+
+}
+
+/*********  Start Navigation *********/
+
+#logo{
+	float: left;
+}
+
+nav{
+	padding-top: 200px;
+	font-family: 'Helvetica Neue';
+}
+
+nav ul{
+	width: 340px;
+	list-style-type:none;
+}
+
+nav li{
+	list-style-type:none;
+	float:left;
+	width: 113px;
+	text-align:right;
+}
+
+/*********  End Navigation *********/
+
+/*********  Start Footer *********/
+
+
+
+
+
+
+
+
+/*********  End Footer *********/
