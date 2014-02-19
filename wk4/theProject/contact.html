@@ -21,6 +21,8 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,7 +34,9 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+	<script type="text/javascript" src="js/jquery-1.5.min.js"></script>
 
 </head>
 <body>
@@ -69,10 +73,53 @@
 					</ul>
 					</nav>
 				</div>
-
 			</div> <!-- End sixtenn column div -->
 		</header>
 	</div><!-- container -->
+
+
+
+
+
+	<div class='container'>
+		<div class = 'sixteen columns'>
+			<div class='two thirds column'>
+				<div class='map_container'>
+						<!-- Dots -->
+						<a class='dot' style='top:125px; left:140px' continent='CA' country='mexico'></a>
+						<!-- Country Details -->
+						<div class='detail_container'>
+							<!-- Opening instructions  -->
+							<div class='detail'>
+								<h3>Ice Cream Island | Vern's Hot Dogs</h3>
+								<p>Click the button to the left to reveal store location and hours</p>
+							</div>	
+						</div>	
+					</div>
+					<div class='country_detail_container'>
+						<div class="detail" id="mexico">
+							<div class="info">
+								<h2>Ice Cream Island | Vern's Hot Dogs</h2>
+								<h3>130 Village Plaza, Dansville New York</h3>
+								<p>Open Daily 11am - 9pm <br>
+								Phone Orders: (585) 335-4797</p>
+							</div>
+						</div>
+					</div> <!-- Country Detail div -->
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
 
 
 	<div class='container' id='footer_bg'>	
@@ -86,5 +133,6 @@
 
 <!-- End Document
 ================================================== -->
+<script type="text/javascript" src="js/interactive_map.js"></script>
 </body>
 </html>

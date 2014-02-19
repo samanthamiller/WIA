@@ -135,3 +135,119 @@ footer{
 	font-family: 'Helvetica Neue';
 }
 /*********  End Footer *********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********  Start contact.html *********/
+/*Map container */
+.map_container{
+	background-image: url(../img/map.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 520px;
+	width:537px;
+	position: relative;
+	/*color: #f4e8c0;*/
+	font-family: 'Helvetica Neue';
+	font-size: 12px;
+	float: right;
+	margin: 0px 0px 0px 20px;
+	padding-top: 20px;
+}
+
+.map_container a.dot{
+	background-image: url(../img/map_marker.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 59px;
+	width: 39px;
+	/*Block will make it act more like a div*/
+	display: block;
+	position: absolute;
+	cursor: pointer;
+}
+
+.map_container a.dot:hover{
+	background-image: url(../img/map_marker_hover.png);
+}
+
+.map_container a.dot.selected{
+	background-image: url(../img/map_marker_active.png);
+}
+
+.map_container .detail_container{
+	position: absolute;
+	top: 350px;
+	left: 20px;
+	width: 350px;
+	height: 260px;
+	color: #7a5527;
+}
+
+.map_container .detail{
+	position: absolute;
+	top: 0px;
+	width: 350px;
+	
+	padding: 10px 12px 10px 12px;
+	border: 2px solid #7a5527;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+
+
+.map_container .detail .info{
+	width: 330px;
+	float: left;
+	font-weight: bold;
+	background-color: #7a5527;
+	padding-left: 20px;
+	padding-top: 20px;
+	color: #f4e8c0;
+}
+
+.map_container .clear_both{ 
+	clear: both; 
+	line-height: 1px;
+}
+
+.map_container .info h2{
+	margin: 0px 0px 0px 0px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #f4e8c0;
+}
+.map_container .info h3{
+	margin: 0px 0px 12px 0px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: #f37d80;
+}
+
+.map_container p{ 
+	margin: 0px 0px 12px 0px; 
+}
+
+.map_container a, a:visited{
+ color: #AA0000; 
+ margin: 0px 10px 0px 0px;
+}
+
+.country_detail_container{
+	display: none;
+}
+
+/*********  End contact.html *********/
