@@ -1,3 +1,14 @@
+/*********  Colors *********/
+/*  beige - #f4e8c0
+	pink - #f37d80
+	brown - #7a5527
+	green - #94cd8a
+	yellow - #fcdc7b
+
+
+
+ */
+
 body{
 	/*background-color: #f4e8c0;*/
 }
@@ -6,20 +17,77 @@ body{
 
 }
 
+/*********  Start Global *********/
+h1{
+	font-family: 'Helvetica Neue';
+	color: #7a5527;
+}
+
+h2{
+	font-family: 'Helvetica Neue';
+	font-size: 25px;
+	color: #7a5527;
+}
+
+#header_bg{
+	background-color: #f37d80;
+}
+
+#footer_bg{
+	background-color: #f37d80;
+}
+
+a{
+	text-decoration: none;
+
+}
+
+a:link{
+	color: #f4e8c0;
+}
+
+a:visited{
+	color: #f4e8c0;
+}
+
+a:hover{
+	color: #7a5527;
+}
+
+a:active{
+	color: #7a5527;
+}
+/*********  End Global *********/
+
+
+
+
+
+
+
 /*********  Start Navigation *********/
 
 #logo{
 	float: left;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+#companyName{
+	padding-top: 100px;
 }
 
 nav{
-	padding-top: 200px;
+	padding-top: 165px;
 	font-family: 'Helvetica Neue';
+	list-style-type: none;
+	font-size: 20px;
 }
 
 nav ul{
 	width: 340px;
 	list-style-type:none;
+
 }
 
 nav li{
@@ -27,17 +95,43 @@ nav li{
 	float:left;
 	width: 113px;
 	text-align:right;
+	color: #94cd8a;
 }
 
 /*********  End Navigation *********/
 
+
+/*********  Start index.html *********/
+img{
+	/*padding-bottom: 10px;*/
+}
+
+#slogan{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0;
+}
+
+.fancybox{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.container{
+	background-color: #f4e8c0;
+}
+
+.gallery{
+	padding-bottom: 10px;
+}
+
+
+/*********  End index.html *********/
+
+
 /*********  Start Footer *********/
-
-
-
-
-
-
-
-
+footer{
+	font-family: 'Helvetica Neue';
+}
 /*********  End Footer *********/

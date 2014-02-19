@@ -30,6 +30,13 @@
 	<script type="text/javascript"  src="js/jquery-1.10.1.min.js" ></script>
 	<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
 
+	<!-- For Fancybox to run -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.fancybox').fancybox();
+		});
+	</script>
+
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -52,18 +59,22 @@
 
 	<!-- Delete everything in this .container and get started on your own site! -->
 
-	<div class="container">
+	<div class="container" id='header_bg'>
 		<header>
-			<div class= 'sixteen columns'>
-				<div class = "nine columns alpha">
+			<div class= 'sixteen columns' >
+				<div class = "three columns alpha">
 					<h1 id='logo' style='margin-top:20px'>
 						<a href='index.html'>
-							<img src="img/logo.jpg" height='200' width='200' />
+							<img src="img/logo.png" height='175' width='175' />
 						</a>	
 					</h1>
 				</div> <!-- End four column alpha div -->
 
-				<div class = 'six columns offset-by-one omega'>
+				<div class='seven columns alpha' id='companyName'>
+					<h2 >Ice Cream Island | Verns Hot Dogs</h2>
+				</div>	
+
+				<div class = 'six columns'>
 					<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -77,11 +88,46 @@
 		</header>
 	</div><!-- container -->
 
+	<div class='container', 'content'>
+		<div class = 'sixteen columns'>
+			<h1 id='slogan'>Take a drive through the Island!</h1>
+		</div>
+	</div>
 
-	<div class = 'container'></div>
+	<div class = 'container' , 'content'>
+		<div class = 'one-third column'>
+			<a class='fancybox' rel='group1' href="img/img_1.jpg" title="Ice Cream Island | Verns Hot Dogs opens May 4th 2014">
+				<img class = 'gallery' src="img/img_1_thumb.jpg" alt="Opening day May 14th" width='250' height='250'>
+			</a>
+
+			<a class='fancybox' rel='group1' href="img/img_4.jpg" title="Try a yummy Banana Split!">
+				<img class = 'gallery' src="img/img_4_thumb.jpg" alt="Banana Split" width='250' height='250'>
+			</a>
+		</div><!-- One third Column -->
+
+		<div class = 'one-third column'>
+			<a class='fancybox' rel='group1' href="img/img_2.jpg" title="Home made fresh strawberry sauce for vanilla ice cream...only at Ice Cream Island!">
+				<img class = 'gallery' src="img/img_2_thumb.jpg" alt="Strawberry Sauce" width='250' height='250'>
+			</a>
+
+			<a class='fancybox' rel='group1' href="img/img_5.jpg" title="Sit and relax on the island deck">
+				<img class = 'gallery' src="img/img_5_thumb.jpg" alt="Ice Cream Island | Verns Dog House" width='250' height='250'>
+			</a>			
+		</div><!-- One third Column -->
+
+		<div class = 'one-third column'>
+			<a class='fancybox' rel='group1' href="img/img_3.jpg" title="Swing through our drive thru">
+				<img class = 'gallery' src="img/img_3_thumb.jpg" alt="Ice Cream Island | Verns Dog House" width='250' height='250'>
+			</a>
+
+			<a class='fancybox' rel='group1' href="img/img_6.jpg" title="Make us your next feild trip destination!">
+				<img class = 'gallery' src="img/img_6_thumb.jpg" alt="image 1" width='250' height='250'>
+			</a>			
+		</div> <!-- One third Column -->
+	</div><!-- container -->
 
 
-	<div class='container'>	
+	<div class='container' id='footer_bg'>	
 		<footer>
 			<div class='sixteen columns'>
 				<span class='copyright'>© Ice Cream Island | Vern's Hot Dogs</span>
