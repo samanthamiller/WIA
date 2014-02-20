@@ -4,23 +4,13 @@
 	brown - #7a5527
 	green - #94cd8a
 	yellow - #fcdc7b
-
-
-
  */
-
-body{
-	/*background-color: #f4e8c0;*/
-}
-
-.container{
-
-}
 
 /*********  Start Global *********/
 h1{
 	font-family: 'Helvetica Neue';
 	color: #7a5527;
+	font-size: 35px;
 }
 
 h2{
@@ -241,8 +231,7 @@ footer{
 	margin: 0px 0px 12px 0px; 
 }
 
-.map_container a, a:visited{
- color: #AA0000; 
+.map_container a, a:visited{ 
  margin: 0px 10px 0px 0px;
 }
 
