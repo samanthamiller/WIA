@@ -15,8 +15,15 @@ h1{
 
 h2{
 	font-family: 'Helvetica Neue';
-	font-size: 25px;
+	font-size: 20px;
 	color: #7a5527;
+}
+
+p{
+	font-family: 'Helvetica Neue';
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/*color: #7a5527;*/
 }
 
 #header_bg{
@@ -99,7 +106,12 @@ img{
 #slogan{
 	text-align: center;
 	padding-top: 20px;
-	padding-bottom: 20px;
+	margin: 0;
+}
+
+#slogan2{
+	text-align: center;
+	padding-bottom: 5px;
 	margin: 0;
 }
 
@@ -125,6 +137,83 @@ footer{
 	font-family: 'Helvetica Neue';
 }
 /*********  End Footer *********/
+
+
+
+
+/*********  Start menu.html *********/
+.etabs { 
+	margin: 0; 
+	padding: 0; 
+}
+
+.tab { 
+	display: inline-block; 
+	zoom:1; *display:inline; 
+	background: #935135; 
+	border: solid 1px #D4CDAF; 
+	border-bottom: none; 
+	-moz-border-radius: 4px 4px 0 0; 
+	-webkit-border-radius: 4px 4px 0 0; 
+}
+
+.tab a { 
+	font-size: 16px; 
+	line-height: 2em; 
+	display: block; 
+	padding: 0 20px; 
+	outline: none; 
+	text-decoration: none;
+	color:#D1D774;
+	font-family: 'Helvetica Neue';
+}
+
+
+.tab a:hover { 
+	/*text-decoration: underline; */
+}
+
+.tab.active { 
+	background: #D4CDAF; 
+	padding-top: 6px; 
+	position: relative; 
+	top: 1px; 
+	border-color: #D4CDAF; 
+}
+
+.tab a.active { 
+	font-weight: bold; 
+	color: #935135;
+}
+.tab-container .panel-container { 
+	/*width:700px;*/
+	/*height:200px;*/
+	background: #D4CDAF; 
+	border: solid #D4CDAF 1px; 
+	padding: 20px; 
+	-moz-border-radius: 0 4px 4px 4px; 
+	-webkit-border-radius: 0 4px 4px 4px; 
+	font-family: 'Helvetica Neue';
+	color: #935135;
+
+}
+/*********  End main.html *********/    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -181,7 +270,7 @@ footer{
 	top: 350px;
 	left: 20px;
 	width: 350px;
-	height: 260px;
+	height: 200px;
 	color: #7a5527;
 }
 
@@ -237,6 +326,14 @@ footer{
 
 .country_detail_container{
 	display: none;
+}
+
+.contactHeader{
+	margin-bottom: 0px;
+}
+
+.contactDetail{
+	color: #7a5527;
 }
 
 /*********  End contact.html *********/
