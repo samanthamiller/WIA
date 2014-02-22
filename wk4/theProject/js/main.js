@@ -1,7 +1,9 @@
-$("#hide").click(function(){
-  $("p").hide();
-});
 
-$("#show").click(function(){
-  $("p").show();
-});
+	$('#iciToggle').click(function(){
+		$('.iciMenu').toggle();
+	})
+
+
+	$('#vernsToggle').click(function(){
+		$('.vernsMenu').toggle();
+	})
