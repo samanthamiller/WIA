@@ -5,7 +5,7 @@ window.onload = function() {
 		if(ctx){
 		// Example 1	
 			// 1. Create a variable to hold the image
-			// var srcImg = document.getElementById('img1');
+			var srcImg = document.getElementById('img1');
 
 		// 2. Draw that image directly onto the canvas 
 		// 	// Basic way to place image
@@ -30,18 +30,18 @@ window.onload = function() {
 
 		// Example 4 - Draw a video onto the canvase
 			// 1. Create a variable to hold our video
-			// Grab each frame from the video and paint onto the canvas
-			var srcVid = document.getElementById('vid1');
-			// .play(); will start the video for us
-			srcVid.play();
+			// // Grab each frame from the video and paint onto the canvas
+			// var srcVid = document.getElementById('vid1');
+			// // .play(); will start the video for us
+			// srcVid.play();
 
 			// 2. Set an interval function
-			setInterval(function(){
-				var theCanvas = document.getElementById('Canvas1');
-				var ctx = theCanvas.getContext('2d')
-				var srcVid = document.getElementById('vid1');
-				ctx.drawImage(srcVid, 0, 0);
-			}, 15);
+			// setInterval(function(){
+			// 	var theCanvas = document.getElementById('Canvas1');
+			// 	var ctx = theCanvas.getContext('2d')
+			// 	var srcVid = document.getElementById('vid1');
+			// 	ctx.drawImage(srcVid, 0, 0);
+			// }, 15);
 		}
 	}
 }
